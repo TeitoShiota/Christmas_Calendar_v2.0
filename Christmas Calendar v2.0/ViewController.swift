@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     //Varibles and constants
     
     @IBOutlet weak var mainLabel: UILabel!
-    var gifts = ["Banana","Pear","Apple","Orange","Kiwi","Potato","Cucumber","Rope","Mango","Tomato","Socks","Horrible Christmas Sweater","Unsatifying plot device","Re-run of 2020","Banana, wait haven't we already had that one?", "Pear, Now this one I know we have had before.", "Apple, now stop reusing the same gifts", "Half-eaten Apple", "French Fries", "Jacked potatoes", "A DVD collection of Friends that never stops replaying your favourite episodes","We kinda ended up using all of our budget on that last one, sorry...","By this point I kinda ran out of ideas, but don't you worry, I saved the best for last!","Red Harring"]
-
+    var gift = ["Banana","Pear","Apple","Orange","Kiwi","Potato","Cucumber","Rope","Mango","Tomato","Socks","Horrible Christmas Sweater","Unsatifying plot device","Re-run of 2020","Banana, wait haven't we already had that one?", "Pear, Now this one I know we have had before.", "Apple, now stop reusing the same gifts", "Half-eaten Apple", "French Fries", "Jacked potatoes", "A DVD collection of Friends that never stops replaying your favourite episodes","We kinda ended up using all of our budget on that last one, sorry...","By this point I kinda ran out of ideas, but don't you worry, I saved the best for last!","Red Harring"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
 //General functions and utilities
     func getGift(giftChoice:Int) {
-        updateMainLabel("On the \(giftChoice) day of Christmas, you got a \(gifts[giftChoice-1])")
+        updateMainLabel("On the \(giftChoice) day of Christmas, you got a \(gift[giftChoice-1])")
     }
     
     func updateMainLabel(_ newText: String){

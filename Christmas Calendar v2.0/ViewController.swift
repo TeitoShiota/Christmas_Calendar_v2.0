@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //Varibles and constants
-    
+//Labels are listed below.
     @IBOutlet weak var mainLabel: UILabel!
+    
+    
+//Varibles and constants.
     var gift = ["Banana","Pear","Apple","Orange","Kiwi","Potato","Cucumber","Rope","Mango","Tomato","Socks","Horrible Christmas Sweater","Unsatifying plot device","Re-run of 2020","Banana, wait haven't we already had that one?", "Pear, Now this one I know we have had before.", "Apple, now stop reusing the same gifts", "Half-eaten Apple", "French Fries", "Jacked potatoes", "A DVD collection of Friends that never stops replaying your favourite episodes","We kinda ended up using all of our budget on that last one, sorry...","By this point I kinda ran out of ideas, but don't you worry, I saved the best for last!","Red Harring"]
     
     
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     
-//General functions and utilities
+//General functions and utilities.
     func getGift(giftChoice:Int) {
         updateMainLabel("On the \(giftChoice) day of Christmas, you got a \(gift[giftChoice-1])")
     }
@@ -32,7 +34,6 @@ class ViewController: UIViewController {
 
     
 //Buttons for choosing gifts are listed below.
-
     @IBAction func buttonDay1(_ sender: Any) {getGift(giftChoice: 1)}
     @IBAction func buttonDay2(_ sender: Any) {getGift(giftChoice: 2)}
     @IBAction func buttonDay3(_ sender: Any) {getGift(giftChoice: 3)}
@@ -58,4 +59,3 @@ class ViewController: UIViewController {
     @IBAction func buttonDay23(_ sender: Any) {getGift(giftChoice: 23)}
     @IBAction func buttonDay24(_ sender: Any) {getGift(giftChoice: 24)}
 } //END of viewDidLoad()
-
